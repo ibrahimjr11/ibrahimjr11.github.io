@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, maximum-scale=1.0,minimum-scale=1.0, initial-scale=1.0">
+    <title>your cart</title>
+     <link rel="stylesheet" href="./cart.css" >
+    <link rel='stylesheet' href=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/botstrap.min.css">
+</head>
+<body>
+ 
+    <div class="container1">
+        <h2 class="middle_text">cART</h2>
+        <div class="justify_center">
+            <div class="col">
+                <div class="table_responsive">
+                      <table id="mytable" class="table">
+                         <thead>
+                              <tr>
+                                  <th style="width: 10%;">NFT</th> 
+                                  <th style="width: 30%;">Name</th>
+                                  <th style="width: 30%;">Quantity</th>
+                                  <th style="width: 30%;">Price</th>
+                                  <th class="text-right">
+                                      <span id="amount" class="amount">Amount</span>
+                                  </th>
+                              </tr>
+                          </thead>
+    <tbody>
+           <!-- copy and paste the 'tr' as many times as i want -->
+                       <!-- first -->
+    <tr>
+                                  <td>
+                                      <div class="nft_img">
+                                          <div class="img_nft"> <img src="nft1.png">  </div>                                                                                  
+                                      </div>
+                                  </td>
+                                  <td> <p>Bored Ape Gold (OG)</p></td>
+                                  <td> 
+                                      <div class="button">
+                                          <button class="cart_qty_plus" type="button" value="+">+</button>
+                                       <input type="text" name="qty" min="0" class="qty form-control"  style="background-color: black; color: white; width: 100%;" value="0">
+                                          <button class="cart_qty_minus" type="button" value="-">-</button>
+                                      </div>
+                                  </td>
+                                  <hr> 
+                                  <td>
+                                      <input type="text" style="background-color: black; color: white;" value="1000100" class="price form-control" disabled>
+                                  </td>
+                                  <td align="right">£
+                                      <span id="amount" class="amount">0</span>
+                                  </td>
+   
+                                </tr>
+                                <hr>             <!-- second -->
+    <tr style="padding-left: 100px;">
+                    <td>
+                        <div class="nft_img">
+                            <div class="img_nft"> <img src="nft2.png">  </div>                                                                                  
+                        </div>
+                    </td>
+                    <td> <p>Bored Ape Terminator </p></td>
+                    <td> 
+                        <div class="button">
+                            <button class="cart_qty_plus" type="button" value="+">+</button>
+                         <input type="text" name="qty" min="0" class="qty form-control"  style="background-color: black; color: white; width: 100%;" value="0">
+                            <button class="cart_qty_minus" type="button" value="-">-</button>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" style="background-color: black; color: white;" value="1000200" class="price form-control" disabled>
+                    </td>
+                    <td align="right">£
+                        <span id="amount" class="amount">0</span>
+                    </td>
+    </tr>
+                <!-- third -->
+    <tr>
+                    <td>
+                        <div class="nft_img">
+                            <div class="img_nft"> <img src="nft3.png" >  </div>                                                                                  
+                        </div>
+                    </td>
+                    <td> <p>Bored Ape Limited Edition</p></td>
+                    <td> 
+                        <div class="button">
+                            <button class="cart_qty_plus" type="button" value="+">+</button>
+                         <input type="text" name="qty" min="0" class="qty form-control"  style="background-color: black; color: white; width: 100%;" value="0">
+                            <button class="cart_qty_minus" type="button" value="-">-</button>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" style="background-color: black; color: white;"  value="1000700" class="price form-control" disabled>
+                    </td>
+                    <td align="right">£
+                        <span id="amount" class="amount">0</span>
+                    </td>
+    </tr>
+             <!-- end -->
+    </tbody>
+         
+                            <tfoot>
+                                <tr>
+                                  <td colspan="4"></td>
+                                  <td align="right">
+                                   <br> <hr color="burlywood">
+                                    <strong>TOTAL = £ <span id="total" class="total" >0</span></strong>
+                                  </td>
+                              </tr>
+                            </tfoot>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="./cart.js"></script> 
+</body>
+</html>
